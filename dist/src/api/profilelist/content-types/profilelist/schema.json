@@ -1,0 +1,45 @@
+{
+    "kind": "collectionType",
+    "collectionName": "profilelists",
+    "info": {
+        "singularName": "profilelist",
+        "pluralName": "profilelists",
+        "displayName": "profilelist",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "profileName": {
+            "type": "string",
+            "required": true
+        },
+        "profileDescribe": {
+            "type": "text",
+            "required": false
+        },
+        "profileIcon": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        },
+        "awardList": {
+            "type": "blocks",
+            "required": false
+        },
+        "awardimage": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        }
+    }
+}

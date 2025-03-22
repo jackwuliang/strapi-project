@@ -1,0 +1,22 @@
+{
+    "kind": "collectionType",
+    "collectionName": "first_page_imgs",
+    "info": {
+        "singularName": "first-page-img",
+        "pluralName": "first-page-imgs",
+        "displayName": "firstPageImg"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "NavigationPage": {
+            "allowedTypes": [
+                "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": true
+        }
+    }
+}

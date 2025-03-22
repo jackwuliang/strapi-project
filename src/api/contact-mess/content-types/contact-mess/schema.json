@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_messes",
+  "info": {
+    "singularName": "contact-mess",
+    "pluralName": "contact-messes",
+    "displayName": "contactMess"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "phonenum": {
+      "type": "biginteger"
+    },
+    "wechatimg": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "woaImage": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "mail": {
+      "type": "email"
+    }
+  }
+}

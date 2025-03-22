@@ -1,0 +1,50 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "project",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "projectName": {
+            "type": "string",
+            "unique": true,
+            "required": true
+        },
+        "author": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text",
+            "default": "请添加对应的产品描述"
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": true,
+            "allowedTypes": [
+                "files",
+                "images",
+                "videos"
+            ]
+        },
+        "category": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::category.category"
+        },
+        "flextype": {
+            "type": "boolean",
+            "default": true
+        },
+        "addTime": {
+            "type": "date",
+            "required": true
+        }
+    }
+}
